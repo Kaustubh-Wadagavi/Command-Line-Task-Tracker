@@ -62,6 +62,6 @@ public class TaskEntry implements Serializable {
 
     @Override
     public String toString() {
-        return new StringBuffer("Start Time :").append(this.startTime).append("\nEnd Time :").append(this.endTime).append("\nType :").append(this.taskType).append("\nTask Name :").append(this.taskName).append("\nDescription :").append(this.taskDescription).toString();
+        return new StringBuffer("Start Time : ").append(this.startTime).append("\nEnd Time : ").append(this.endTime).append("\nType : ").append(this.taskType).append("\n" + this.getTaskType() + " Name : ").append(this.taskName).append("\nDescription : ").append(this.taskDescription).toString();
     }
 }
