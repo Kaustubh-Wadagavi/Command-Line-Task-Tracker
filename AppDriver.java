@@ -60,9 +60,9 @@ class AppDriver {
         taskEntry.setEndTime(bufferReader.readLine());
         System.out.println("Enter Task Type (Task/Learning) :");
         taskEntry.setTaskType(bufferReader.readLine());
-        System.out.println("Enter Name of Task/Learning :");
+        System.out.println("Enter Name of Your " + taskEntry.getTaskType() + " :");
         taskEntry.setTaskName(bufferReader.readLine());
-        System.out.println("Enter Description for " + taskEntry.getTaskName().toUpperCase() + " :");
+        System.out.println("Enter Description What You did for Your "+ taskEntry.getTaskType() + " " + "(" + taskEntry.getTaskName().toUpperCase() + ") :");
         taskEntry.setDescription(bufferReader.readLine());
         return taskEntry;
     }
